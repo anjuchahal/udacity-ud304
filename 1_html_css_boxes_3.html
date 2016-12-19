@@ -1,0 +1,87 @@
+<!doctype html> 
+<html>
+	<head>
+		<title>Shapes Demo</title>
+		<style>
+			#content {
+				max-width: 900px;
+			    height: 100%;
+			    margin: 0px auto;
+			}
+
+			#banner {
+			    color: green;
+			    margin: 20px;
+			}
+
+			#first {
+			    width: 200px;
+			    height: 200px;
+			    background: green;
+			}
+
+			.surprise {
+			    border-radius: 50%;
+			    display: inline-block;
+			}
+
+			#second {
+			    width: 125px;
+			    height: 125px;
+			    background: red;
+			    margin-left: 200px;
+			    margin-right: 50px;
+			}
+
+			#playButton {
+			    width: 200px;
+			    height: 200px;
+			    position: relative;
+			    background: rgb(101, 156, 101);
+			}
+			
+			#playTriangle {
+			    width: 0px;
+			    height: 0px;
+			    border-bottom: 35px solid transparent;
+			    border-top: 35px solid transparent;
+			    border-left: 35px solid #bbebb4;
+			    line-height: 0px;
+			    position: absolute;
+			    top: 60px;
+			    left: 90px;
+			    z-index: 3;
+			}
+
+			#playTriangle2 {
+			    width: 0px;
+			    height: 0px;
+			    border-bottom: 42px solid transparent;
+			    border-top: 42px solid transparent;
+			    border-left: 42px solid green;
+			    line-height: 0px;
+			    position: absolute;
+			    top: 54px;
+			    left: 87px;
+			    z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div>
+				<h1 id="banner">Shapes Demo</h1>
+			</div>
+			<div class="row">
+				<div class="surprise" id="first"></div>
+			</div>
+			<div class="row">
+				<div class="surprise" id="second"></div>
+				<div class="surprise" id="playButton">
+					<div id="playTriangle"></div>
+					<div id="playTriangle2"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
